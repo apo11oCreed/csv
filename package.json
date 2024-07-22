@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "src/server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "dev": "vite --port 8080 && format",
     "build": "vite build",
     "preview": "vite preview"
@@ -16,6 +18,11 @@
   "dependencies": {
     "@mrodrig/json-2-csv-cli": "^5.5.5",
     "csv": "^6.3.9",
-    "json-2-csv": "^5.5.4"
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "json-2-csv": "^5.0.0",
+    "nodemon": "^3.1.4"
   }
 }
